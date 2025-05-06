@@ -1,0 +1,33 @@
+# idea
+out
+classes
+*.ipr
+*.iws
+*.iml
+.idea
+
+# eclipse
+eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# netbeans
+.nb-gradle
+.nb-gradle-properties
+
+# gradle
+build
+.gradle
+
+# kotlin
+.kotlin
+kotlin-js-store
+
+# other
+**/run
+.DS_Store
+Thumbs.db
