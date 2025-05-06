@@ -1,9 +1,10 @@
 # Kolor
 
+A lightweight, fast, and easy-to-use color library for Kotlin Multiplatform.\
+Kolor is designed to be simple and efficient, providing a base abstraction over colors and giving you ample tooling to work with them.
+
 ---
 
-[![CurseForge Badge](https://raw.githubusercontent.com/intergrav/devins-badges/v2/assets/cozy/available/curseforge_64h.png)](https://www.curseforge.com/minecraft/mc-mods/textful)
-[![Modrinth Badge](https://raw.githubusercontent.com/intergrav/devins-badges/v2/assets/cozy/available/modrinth_64h.png)](https://modrinth.com/mod/textful)  
 [![Discord Badge](https://raw.githubusercontent.com/intergrav/devins-badges/v2/assets/cozy/social/discord-singular_64h.png)](https://s.deftu.dev/discord)
 [![GitHub Badge](https://raw.githubusercontent.com/intergrav/devins-badges/v2/assets/cozy/social/github-singular_64h.png)](https://github.com/Deftu/Textful)  
 [![Ko-Fi Badge](https://raw.githubusercontent.com/intergrav/devins-badges/v2/assets/cozy/donate/kofi-singular_64h.png)](https://ko-fi.com/Deftu)
