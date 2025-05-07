@@ -10,9 +10,7 @@ plugins {
     id("dev.deftu.gradle.tools.publishing.maven") version(dgtVersion)
 }
 
-afterEvaluate {
-    println(getDgtPublishingUsername())
-}
+println(getDgtPublishingUsername())
 
 kotlin {
     explicitApi()
