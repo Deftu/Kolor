@@ -1,3 +1,4 @@
+import dev.deftu.gradle.utils.getDgtPublishingUsername
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.ExperimentalWasmDsl
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
@@ -7,6 +8,10 @@ plugins {
     val dgtVersion = "2.34.0"
     id("dev.deftu.gradle.tools") version(dgtVersion)
     id("dev.deftu.gradle.tools.publishing.maven") version(dgtVersion)
+}
+
+afterEvaluate {
+    println(getDgtPublishingUsername())
 }
 
 kotlin {
