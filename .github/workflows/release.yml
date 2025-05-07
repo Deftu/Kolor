@@ -32,4 +32,4 @@ jobs:
         env:
           DEFTU_PUBLISHING_USERNAME: ${{ secrets.DEFTU_PUBLISHING_USERNAME }}
           DEFTU_PUBLISHING_PASSWORD: ${{ secrets.DEFTU_PUBLISHING_PASSWORD }}
-        run: ./gradlew publishAllPublicationsToDeftu${{ github.event.inputs.repository }}Repository
+        run: ./gradlew publishAllPublicationsToDeftu${{ github.event.inputs.repository }}Repository -Pdeftu.publishing.username=${{ secrets.DEFTU_PUBLISHING_USERNAME }} -Pdeftu.publishing.password=${{ secrets.DEFTU_PUBLISHING_PASSWORD }}
