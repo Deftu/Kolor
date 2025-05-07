@@ -11,10 +11,6 @@ on:
           - Releases
           - Snapshots
 
-env:
-  DEFTU_PUBLISHING_USERNAME: ${{ secrets.DEFTU_PUBLISHING_USERNAME }}
-  DEFTU_PUBLISHING_PASSWORD: ${{ secrets.DEFTU_PUBLISHING_PASSWORD }}
-
 jobs:
   publish:
     runs-on: macos-latest
@@ -33,4 +29,7 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Run publish task
-        run: ./gradlew publishAllPublicationsToDeftu${{ github.event.inputs.repository }}Repository -Pdeftu.publishing.username=${{ env.DEFTU_PUBLISHING_USERNAME }} -Pdeftu.publishing.password=${{ env.DEFTU_PUBLISHING_PASSWORD }}
+        env:
+          DEFTU_PUBLISHING_USERNAME: ${{ secrets.DEFTU_PUBLISHING_USERNAME }}
+          DEFTU_PUBLISHING_PASSWORD: ${{ secrets.DEFTU_PUBLISHING_PASSWORD }}
+        run: ./gradlew publishAllPublicationsToDeftu${{ github.event.inputs.repository }}Repository
