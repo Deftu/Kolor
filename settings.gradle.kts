@@ -17,10 +17,6 @@ pluginManagement {
         mavenCentral()
         mavenLocal()
     }
-
-    plugins {
-        id("dev.deftu.gradle.multiversion-root") version("2.34.0")
-    }
 }
 
 plugins {
