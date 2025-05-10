@@ -1,4 +1,3 @@
-import dev.deftu.gradle.utils.getDgtPublishingUsername
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.ExperimentalWasmDsl
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
@@ -9,8 +8,6 @@ plugins {
     id("dev.deftu.gradle.tools") version(dgtVersion)
     id("dev.deftu.gradle.tools.publishing.maven") version(dgtVersion)
 }
-
-println("Publishing username: ${getDgtPublishingUsername()}")
 
 kotlin {
     explicitApi()
